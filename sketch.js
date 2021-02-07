@@ -10,11 +10,11 @@ let Cells = [
 ]
 
 function setup(){
-    createCanvas(800, 500);
+    createCanvas(400, 400);
 }
   
 function draw(){
-
+  drawBoard();
 }
 
 let drawBoard = () => {
@@ -27,7 +27,7 @@ let drawBoard = () => {
 
 // x:i, y:jのCellを描画します。返り値はなし
 let drawCell = (i, j) => {
-    let info = Cells[j, i];
+    let info = Cells[j][i];
     fill(0, 255, 0);
-    rect(i * 80, j * 80, 80, 80);
+    rect(i * 50, j * 50, 50, 50);
 }
